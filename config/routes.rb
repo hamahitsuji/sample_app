@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get 'todolists/:id' => 'todolists#show', as: 'todolist'
   get 'todolists/:id/edit' => 'todolists#edit', as: 'edit_todolist'
   patch 'todolists/:id' => 'todolists#update', as: 'updatea_todolist'
+  delete 'todolists/:id' => 'todolists#destroy', as: 'destroy_todolist'
 
 end
